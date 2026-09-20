@@ -79,18 +79,18 @@ void SPI_Init(SPI_Handle_t *pSPIHandle)
     temp_reg |= (pSPIHandle->SPIConfig.SPI_SclkSpeed << SPI_CR1_BR);
 
 	// Data frame format
-	tempreg |= pSPIHandle->SPIConfig.SPI_DFF << SPI_CR1_DFF;
+	temp_reg |= pSPIHandle->SPIConfig.SPI_DFF << SPI_CR1_DFF;
 
 	// Clock polarity
-	tempreg |= pSPIHandle->SPIConfig.SPI_CPOL << SPI_CR1_CPOL;
+	temp_reg |= pSPIHandle->SPIConfig.SPI_CPOL << SPI_CR1_CPOL;
 
     // Clock phase
-	tempreg |= pSPIHandle->SPIConfig.SPI_CPHA << SPI_CR1_CPHA;
+	temp_reg |= pSPIHandle->SPIConfig.SPI_CPHA << SPI_CR1_CPHA;
 
     // Software slave management
-	tempreg |= pSPIHandle->SPIConfig.SPI_SSM << SPI_CR1_SSM;
+	temp_reg |= pSPIHandle->SPIConfig.SPI_SSM << SPI_CR1_SSM;
 
-	pSPIHandle->pSPIx->CR1 = tempreg; // write temp variable to actual CR1 register
+	pSPIHandle->pSPIx->CR1 = temp_reg; // write temp variable to actual CR1 register
 }
 
 

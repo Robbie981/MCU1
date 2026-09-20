@@ -6,7 +6,7 @@
  */
 
 #include "stm32f407xx_gpio_driver.h"
-#include <_types/_uint8_t.h>
+#include <stdint.h>
 
 /*
  * Peripheral Clock setup

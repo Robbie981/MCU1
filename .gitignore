@@ -10,7 +10,17 @@ RemoteSystemsTempFiles/
 **/Debug/
 **/Release/
 *.o
+*.d
+*.su
+*.cyclo
 *.elf
 *.bin
 *.hex
 *.map
+
+# STM32 build output
+Debug/
+Release/
+
+# IDE-generated files
+.settings/
