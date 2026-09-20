@@ -1,0 +1,16 @@
+# OS Junk
+.DS_Store
+
+# IDE Settings (Eclipse, STM32CubeIDE, and VS Code)
+.metadata/
+.vscode/
+RemoteSystemsTempFiles/
+
+# Build artifacts / Compiled binaries (Common in Embedded C)
+**/Debug/
+**/Release/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
